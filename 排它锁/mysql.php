@@ -1,10 +1,4 @@
 <?php
-/**
-* MyPDO
-* @author Jason.Wei <jasonwei06@hotmail.com>
-* @license http://www.sunbloger.com/
-* @version 5.0 utf8
-*/
 class MyPDO
 {
     protected static $_instance = null;
