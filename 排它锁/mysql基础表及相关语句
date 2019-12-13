@@ -1,0 +1,15 @@
+CREATE TABLE `good_test` (
+  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `good_id` mediumint(8) unsigned NOT NULL DEFAULT 0 COMMENT '商品id',
+  `good_name` varchar(255) NOT NULL DEFAULT 'goodN' COMMENT '商品名称',
+  `good_num` int(11) NOT NULL DEFAULT 0 COMMENT '商品数量',
+  `good_status` tinyint(1) NOT NULL DEFAULT 0 COMMENT '账号状态:0为正常 1为已删除',
+	`update_time` int(11) NOT NULL DEFAULT 0 COMMENT '更新时间',
+	PRIMARY KEY `id` (`id`),
+  KEY `idx_id_name` (`good_id`,`good_name`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+
+start transaction ; 
+update good_test set good_num = 2000 where good_id = 15 ;
+COMMIT
