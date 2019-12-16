@@ -4,9 +4,9 @@ Play the lock and burn oneself
 
 mysql锁相关实例
 
-悲观锁：for update
+悲观锁 ：for update
 
-乐观锁: mysql 可使用版本号进行控制,每次修改先查询版本号,在修改与版本号一致的那一行
+乐观锁 : mysql 可使用版本号进行控制,每次修改先查询版本号,在修改与版本号一致的那一行
 
 使用事务时：
            
