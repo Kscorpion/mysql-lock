@@ -7,8 +7,11 @@ for update是在数据库中上锁用的(悲观锁)，可以为数据库中的�
 2.随后执行语句：
 
 start transaction ; 
+
 select good_test set good_num = 2000 where good_id = 15 for update;
+
 update good_test set good_num = 2000 where good_id = 15 ;
+
 COMMIT
 
 当注释commit一行时 可发行脚本执行暂停
